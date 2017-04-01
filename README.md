@@ -12,3 +12,5 @@ CORE_PEER_ADDRESS=peer0:7051 peer channel join -b myc1.block
 有时会报错 Error: Error getting broadcast client: Error connecting to orderer:7050 due to grpc: timed out when dialing
 
 多次重复执行可通过该操作
+
+解决方案： 将网络适配器NAT模式改为桥接模式
